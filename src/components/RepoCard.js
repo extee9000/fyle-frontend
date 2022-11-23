@@ -21,7 +21,7 @@ const RepoCard = (props) => {
                 setLoad(true);
             })
             .catch((error) => {
-                console.log(error);
+                setLoad(true);
             });
     };
 

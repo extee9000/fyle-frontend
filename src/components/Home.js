@@ -8,13 +8,11 @@ const Home = () => {
 
     const handleChange = (e) => {
         e.preventDefault();
-        console.log(e.target.value);
         setSearchInput(e.target.value);
     };
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log("Input ", searchInput);
         navigateTo(`/${searchInput}`);
     };
 

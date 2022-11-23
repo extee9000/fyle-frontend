@@ -8,7 +8,6 @@ const RepoComponent = (props) => {
     const [loaded, setLoaded] = useState(false);
 
     useEffect(() => {
-        // console.log(pageNumber);
         if (username !== undefined || username !== "") {
             getUserRepo();
         }

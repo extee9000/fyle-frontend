@@ -33,7 +33,6 @@ const UserDetails = () => {
         await axios
             .get(`https://api.github.com/users/${username}`)
             .then(async (response) => {
-                console.log(response);
                 setUserDetails({
                     userName: response.data.login,
                     name: response.data.name,

@@ -9,6 +9,7 @@ const UserDetailsCard = (props) => {
                     <img
                         className="profileImage"
                         src={props.userDetails.image}
+                        alt = "noImage"
                     ></img>
                     <div className="detailBox">
                         <h1>{props.userDetails.name}</h1>
